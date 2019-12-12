@@ -3,7 +3,6 @@ module.exports = {
     es6: true,
   },
   extends: [
-    'plugin:react/recommended',
     'airbnb',
     'prettier',
     'prettier/react'
@@ -11,6 +10,7 @@ module.exports = {
   globals: {
     Atomics: 'readonly',
     SharedArrayBuffer: 'readonly',
+    __DEV__: 'readonly'
   },
   parser: 'babel-eslint',
   parserOptions: {
